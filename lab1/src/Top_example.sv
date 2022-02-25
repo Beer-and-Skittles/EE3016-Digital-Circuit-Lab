@@ -57,3 +57,9 @@ always_ff @(posedge i_clk or negedge i_rst_n) begin
 end
 
 endmodule
+
+// logic: 			is exactly the same thing as in reg in verilog
+// always_ff: 		activates on every positive edge of the clock
+// always_comb:		used when creating a combinational circuit
+// 					sends warnings if it's becoming a latch
+// always_latch:	used when creating a latch
